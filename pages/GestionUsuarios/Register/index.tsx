@@ -123,16 +123,16 @@ const Register = () => {
             </div>
             <input className="border border-gray-300 shadow-md rounded-sm p-1 w-full" id="doc-registro" type="number" placeholder="Identificación*" name="id" value={input.id} onChange={(e) => setInput({...input, [e.target.name] : e.target.value,})} />
             <input className="border border-gray-300 shadow-md rounded-sm p-1 w-full" id="correo-registro" type="email" placeholder="Correo electrónico*" name="email" value={input.email} onChange={(e) => setInput({...input, [e.target.name] : e.target.value,})} />
-            <input className="border border-gray-300 shadow-md rounded-sm p-1 w-full" id="contraseña-id" type="password" placeholder="Contraseña*" name="password" value={input.password} onChange={(e) => setInput({...input,[e.target.name] : e.target.value,})} />
+            <input className="border border-gray-300 shadow-md rounded-sm p-1 w-full" id="contrasena-id" type="password" placeholder="Contraseña*" name="password" value={input.password} onChange={(e) => setInput({...input,[e.target.name] : e.target.value,})} />
             <div className="my-10">
                 <input className="absolute opacity-0 m-10" type="checkbox" id="information" name="information" checked={input.information} onChange={(e) => setInput({...input,[e.target.name] : e.target.checked,})} />
                 <label className="text-xs pr-28 text-gray-72 relative pl-8" htmlFor="information">Me gustaria recibir información, promociones y novedades <br /> relacionadas con la plataforma</label>
             </div>
-            <button className="mb-4 text-white font-bold bg-blue-600 px-5 py-2 rounded">Registrarme</button>
+            <button className="mb-4 text-white font-bold bg-blue-600 px-5 py-2 rounded" id="btn-registrar">Registrarme</button>
         </form>
         <div className="flex items-center justify-center flex-col">
             <p>¿Ya tienes una cuenta?</p>
-            <Link className="text-white font-bold bg-blue-600 px-5 py-2 rounded" href="/GestionUsuarios">Ingresar!</Link>
+            <Link className="text-white font-bold bg-blue-600 px-5 py-2 rounded" href="/GestionUsuarios" id="btn-ingresar">Ingresar!</Link>
         </div>
     </section>
   )

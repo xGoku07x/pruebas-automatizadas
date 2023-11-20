@@ -57,6 +57,7 @@ const Login = () => {
       <form className="form-login  flex flex-col items-center gap-4" onSubmit={handleLogin}>
         <input
         className="w-full p-2 mb-4 border border-gray-300 rounded-md block shadow-md"
+        id="correo-input"
           type="email"
           placeholder="Correo electrónico"
           name="email"
@@ -70,6 +71,7 @@ const Login = () => {
         />
         <input
           className="w-full p-2 mb-2 border border-gray-300 rounded-md shadow-md"
+          id="contrasena-input"
           type="password"
           placeholder="Contraseña"
           name="password"
@@ -81,11 +83,11 @@ const Login = () => {
             })
           }
         />
-        <button onClick={handleLogin} type="submit" className="text-white font-bold bg-blue-600 px-5 py-2 rounded">Ingresar</button>
+        <button onClick={handleLogin} type="submit" className="text-white font-bold bg-blue-600 px-5 py-2 rounded" id="btn-logear">Ingresar</button>
       </form>
       <div className="mt-neg-6">
         <p className="mb-2">¿No tienes cuenta?</p>
-        <Link className="text-white font-bold bg-blue-600 px-5 py-2 rounded" href="/GestionUsuarios/Register">Registrarse!</Link>
+        <Link className="text-white font-bold bg-blue-600 px-5 py-2 rounded" href="/GestionUsuarios/Register" >Registrarse!</Link>
       </div>
     </section>
   );
