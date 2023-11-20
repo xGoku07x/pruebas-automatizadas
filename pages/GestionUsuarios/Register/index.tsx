@@ -95,6 +95,7 @@ const Register = () => {
             } else {
                 Swal.fire({
                     title: 'Exito!',
+                    id: 'registro-exitoso',
                     text: 'Se ha registrado exitosamente',
                     icon: 'success',
                     confirmButtonText: 'Ok',
@@ -102,6 +103,7 @@ const Register = () => {
                     position: 'top',
                     background: 'black',
                     color: 'white'
+
                 })
                 existingUsers.push(input)
                 localStorage.setItem("users", JSON.stringify(existingUsers))
