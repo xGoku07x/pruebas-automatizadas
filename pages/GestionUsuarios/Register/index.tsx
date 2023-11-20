@@ -118,12 +118,12 @@ const Register = () => {
         <h1 className="text-xl font-bold">Crea tu perfil</h1>
         <form className="flex justify-center flex-col items-center gap-4 w-96" onSubmit={handleSubmit}>
             <div className="w-96 flex gap-4 flex-wrap">
-                <input className="flex-1 pl-4 w-3/6 border border-gray-300 shadow-md rounded-sm p-1" type="text" placeholder="Nombre*" name="name" value={input.name} onChange={(e) => setInput({...input,[e.target.name] : e.target.value,})} />
-                <input className="flex-1 pl-4 w-3/6 border border-gray-300 shadow-md rounded-sm p-1" type="text" placeholder="Apellidos*" name="lastname" value={input.lastname} onChange={(e) => setInput({...input,[e.target.name] : e.target.value,})} />
+                <input className="flex-1 pl-4 w-3/6 border border-gray-300 shadow-md rounded-sm p-1" id="nombre-registro" type="text" placeholder="Nombre*" name="name" value={input.name} onChange={(e) => setInput({...input,[e.target.name] : e.target.value,})} />
+                <input className="flex-1 pl-4 w-3/6 border border-gray-300 shadow-md rounded-sm p-1" id="apellidos-registro" type="text" placeholder="Apellidos*" name="lastname" value={input.lastname} onChange={(e) => setInput({...input,[e.target.name] : e.target.value,})} />
             </div>
-            <input className="border border-gray-300 shadow-md rounded-sm p-1 w-full" type="number" placeholder="Identificación*" name="id" value={input.id} onChange={(e) => setInput({...input, [e.target.name] : e.target.value,})} />
-            <input className="border border-gray-300 shadow-md rounded-sm p-1 w-full" type="email" placeholder="Correo electrónico*" name="email" value={input.email} onChange={(e) => setInput({...input, [e.target.name] : e.target.value,})} />
-            <input className="border border-gray-300 shadow-md rounded-sm p-1 w-full" type="password" placeholder="Contraseña*" name="password" value={input.password} onChange={(e) => setInput({...input,[e.target.name] : e.target.value,})} />
+            <input className="border border-gray-300 shadow-md rounded-sm p-1 w-full" id="doc-registro" type="number" placeholder="Identificación*" name="id" value={input.id} onChange={(e) => setInput({...input, [e.target.name] : e.target.value,})} />
+            <input className="border border-gray-300 shadow-md rounded-sm p-1 w-full" id="correo-registro" type="email" placeholder="Correo electrónico*" name="email" value={input.email} onChange={(e) => setInput({...input, [e.target.name] : e.target.value,})} />
+            <input className="border border-gray-300 shadow-md rounded-sm p-1 w-full" id="contraseña-id" type="password" placeholder="Contraseña*" name="password" value={input.password} onChange={(e) => setInput({...input,[e.target.name] : e.target.value,})} />
             <div className="my-10">
                 <input className="absolute opacity-0 m-10" type="checkbox" id="information" name="information" checked={input.information} onChange={(e) => setInput({...input,[e.target.name] : e.target.checked,})} />
                 <label className="text-xs pr-28 text-gray-72 relative pl-8" htmlFor="information">Me gustaria recibir información, promociones y novedades <br /> relacionadas con la plataforma</label>
