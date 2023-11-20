@@ -95,7 +95,7 @@ const Register = () => {
             } else {
                 Swal.fire({
                     title: 'Exito!',
-                    id: 'registro-exitoso',
+                    
                     text: 'Se ha registrado exitosamente',
                     icon: 'success',
                     confirmButtonText: 'Ok',
