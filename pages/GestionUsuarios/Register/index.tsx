@@ -102,7 +102,10 @@ const Register = () => {
                     timer: 3000,
                     position: 'top',
                     background: 'black',
-                    color: 'white'
+                    color: 'white',
+                    customClass: {
+                        confirmButton: 'swal2-confirm-button-custom',
+                    }
 
                 })
                 existingUsers.push(input)
