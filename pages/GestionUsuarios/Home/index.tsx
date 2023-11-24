@@ -18,7 +18,7 @@ import { useRouter } from 'next/router';
     <Aside />
     <section className="fixed top-12 pt-20 pb-40 w-full h-screen flex flex-col items-center text-left" >
         <div className='w-auto'>
-            <h1 className='font-bold text-2xl mb-10'>Información de la cuenta</h1>
+            <h1 className='font-bold text-2xl mb-10 validacionLogin'>Información de la cuenta</h1>
           <div className='basic-info w-full'>
             <h3 className='font-bold text-xl mb-5'>Información básica</h3>
             <div>
